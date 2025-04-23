@@ -101,10 +101,10 @@ const Login = () => {
     const savedEmail = localStorage.getItem('filaLivre_email');
     const savedRememberMe = localStorage.getItem('filaLivre_rememberMe') === 'true';
     const saveDisplayName = localStorage.setItem('filaLivre_displayName', user?.providerData[0].displayName)
-    if (window.location.search == '/')
-      localStorage.setItem('filaLivre_displayName', null)
-    localStorage.setItem('filaLivre_email', null);
-    // console.log(user.providerData[0].displayName)
+    console.log('filaLivre_email')
+    // if (window.location.search == '/')
+    //   localStorage.setItem('filaLivre_displayName', null)
+    // localStorage.setItem('filaLivre_email', null);
     if (savedEmail && savedRememberMe) {
       setEmail(savedEmail);
       setRememberMe(true);
